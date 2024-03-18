@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+/* GLOBAL STYLE */
+
+/* base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* card */
+.card-style {
+    /* border: 1px solid black; */
+    box-shadow: 0px 8px 24px 2.25px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    padding: 1.5rem;
+    padding-top: 0;
+}
+
+/* heading title */
+.heading-title {
+    /* background-color: #0057FF; */
+    padding-block: 1.5rem;
+}
+
+.heading-title h1 {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* NAV */
+nav {
+    height: 70px;
+    background-color: #0057FF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-inline: 40px;
+}
+
+nav .logo {
+    line-height: 70px;
+    color: white;
+}
+
+/* MAIN */
+main {
+    /* background-color: grey; */
+    height: 100vh;
+    padding: 120px 0 50px 0;
+    display: grid;
+    grid-template-areas: "input-container"
+        "bookshelf-unread"
+        "bookshelf-readed";
+    grid-template-columns: 12.5% 25% 25% 25% 12.5%;
+    grid-template-rows: 1fr;
+    column-gap: 1rem;
+}
+
+/* INPUT CONTAINER */
+.input-container {
+    grid-column-start: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* INPUT TEXT DEFAULT */
+.input-default{
+    border: 1px solid #0057FF;
+    border-radius: 15px;
+    padding: 6px 15px;
+}
+
+/* BUTTON DEFAULT */
+.btn-default{
+    padding: 6px 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: #0057FF;
+    color: white;
+}
+
+/* FORM SEARCHBAR */
+.form-search form{
+    display: flex;
+    gap: 8px;
+}
+
+/* FORM INPUT */
+.form-input-books{
+    height: 100%;
+}
+
+.group-item-input{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+}
+
+.group-item-input:nth-child(4){
+    flex-direction: row;
+}
+
+.group-item-input:nth-child(4) label {
+    margin-left: 8px;
+}
+
+/* BOOKSHELF */
+.bookshelf-unread {
+    overflow: hidden;
+}
+
+.bookshelf-readed {
+    overflow: hidden;
+}
+
+/* CONTAINER BOOKS */
+.container-books {
+    overflow-y: scroll;
+    height: calc(100% - 105px);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* ITEM BOOK */
+.item-book{
+    padding: 4px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.title-book {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.author-book, .year-book {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* BUTTON ACTION */
+.btn-action {
+    display: flex;
+    column-gap: 4px;
+}
+
+.btn-action button{
+    display: flex;
+    padding: 4px 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.btn-action button span{
+    margin-left: 4px;
+    font-weight: 500;
+}
